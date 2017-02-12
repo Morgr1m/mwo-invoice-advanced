@@ -56,7 +56,6 @@ public class ProductTest {
 	public void testProductWithNegativePrice() {
 		new TaxFreeProduct(SAMPLE_PRODUCT_NAME, new BigDecimal("-1.00"));
 	}
-
 	private void assertBigDecimalsAreEqual(String expected, BigDecimal actual) {
 		assertEquals(new BigDecimal(expected).stripTrailingZeros(), actual.stripTrailingZeros());
 	}
